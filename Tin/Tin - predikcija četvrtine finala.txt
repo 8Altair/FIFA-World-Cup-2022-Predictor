@@ -1,0 +1,15 @@
+A1B2 | C1D2
+-------------------------------
+Senegal v Denmark --> Senegal
+
+E1F2 | G1H2
+-------------------------------
+Spain v Brasil --> Brasil
+
+B1A2 | D1C2
+-------------------------------
+Wales v France --> France
+
+F1E2 | H1G2
+-------------------------------
+Croatia v Portugal --> Croatia

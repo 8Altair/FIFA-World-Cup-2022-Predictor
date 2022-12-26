@@ -1,0 +1,31 @@
+A1 | B2
+----------------------------------
+Senegal v Wales --> Senegal
+
+C1 | D2
+----------------------------------
+Argentina v Denmark --> Argentina
+
+D1 | C2
+----------------------------------
+France v Poland --> France
+
+B1 | A2
+----------------------------------
+England v Netherlands --> England
+
+E1 | F2
+----------------------------------
+Spain v Croatia --> Spain
+
+G1 | H2
+----------------------------------
+Brasil v Portugal --> Brasil
+
+F1 | E2
+----------------------------------
+Belgium v Germany --> Belgium
+
+H1 | G2
+----------------------------------
+Uruguay v Switzerland --> Uruguay

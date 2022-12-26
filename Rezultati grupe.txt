@@ -1,0 +1,39 @@
+Group A
+---------------
+1. Netherlands
+2. Senegal
+
+Group B
+---------------
+1. England
+2. USA
+
+Group C
+---------------
+1. Argentina
+2. Poland
+
+Group D
+---------------
+1. France
+2. Australia
+
+Group E
+---------------
+1. Japan
+2. Spain
+
+Group F
+---------------
+1. Morocco
+2. Croatia
+
+Group G
+---------------
+1. Brasil
+2. Switzerland
+
+Group H
+---------------
+1. Portugal
+2. South Korea

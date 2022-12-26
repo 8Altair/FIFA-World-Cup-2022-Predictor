@@ -1,0 +1,15 @@
+A1B2 | C1D2
+----------------------------------
+Netherlands v Argentina --> Argentina
+
+E1F2 | G1H2
+----------------------------------
+Croatia v Brasil --> Croatia
+
+B1A2 | D1C2
+----------------------------------
+England v France --> France
+
+F1E2 | H1G2
+----------------------------------
+Morocco v Portugal --> Morocco

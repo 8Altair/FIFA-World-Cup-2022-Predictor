@@ -1,0 +1,31 @@
+A1 | B2
+----------------------------------
+Netherlands v USA --> Netherlands
+
+C1 | D2
+----------------------------------
+Argentina v Denmark --> Argentina
+
+D1 | C2
+----------------------------------
+France v Mexico --> France
+
+B1 | A2
+----------------------------------
+England v Senegal --> England
+
+E1 | F2
+----------------------------------
+Spain v Croatia --> Croatia
+
+G1 | H2
+----------------------------------
+Serbia v Uruguay --> Srbija
+
+F1 | E2
+----------------------------------
+Belgium v Germany --> Germany
+
+H1 | G2
+----------------------------------
+Portugal v Brasil --> Brasil
