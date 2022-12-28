@@ -26,6 +26,7 @@ def group_stage_file_parser(text):
         key_part_two = chr(ord("A") - 1)
         group_name = ""
         first_country = ""
+
         for row in group_stage:
             if row_number % 5 == 0:
                 key_part_two = chr(ord(key_part_two) + 1)
