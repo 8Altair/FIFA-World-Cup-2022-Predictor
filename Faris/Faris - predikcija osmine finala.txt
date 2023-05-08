@@ -1,6 +1,6 @@
 A1 | B2
 ----------------------------------
-Netherlands v Wales --> Senegal
+Netherlands v Wales --> Netherlands
 
 C1 | D2
 ----------------------------------

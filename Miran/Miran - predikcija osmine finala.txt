@@ -16,7 +16,7 @@ England v Senegal --> England
 
 E1 | F2
 ------------------------------------
-Germany v Marocco --> Germany
+Germany v Morocco --> Germany
 
 G1 | H2
 ------------------------------------
@@ -24,7 +24,7 @@ Brasil v Uruguay --> Brasil
 
 F1 | E2
 ------------------------------------
-Croatia v Soain --> Croatia
+Croatia v Spain --> Croatia
 
 H1 | G2
 ------------------------------------

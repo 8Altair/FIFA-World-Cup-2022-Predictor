@@ -1,6 +1,6 @@
 A1B2C1D2 | E1F2G1H2
 ----------------------------------
-Germany v Argentina --> Germany
+Argentina v Germany --> Germany
 
 B1A2D1C2 | F1E2H1G2
 ----------------------------------

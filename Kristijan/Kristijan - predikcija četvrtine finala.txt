@@ -1,6 +1,6 @@
 A1B2 | C1D2
 ------------------------------
-USA v Argentina --> Argentina
+Netherlands v Argentina --> Argentina
 
 E1F2 | G1H2
 ------------------------------

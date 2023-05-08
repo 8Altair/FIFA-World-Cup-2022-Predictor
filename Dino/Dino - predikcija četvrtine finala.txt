@@ -8,7 +8,7 @@ Spain v Brasil --> Brasil
 
 B1A2 | D1C2
 ----------------------------------
-England v France --> France
+England v France --> England
 
 F1E2 | H1G2
 ----------------------------------

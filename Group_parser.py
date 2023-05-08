@@ -1,15 +1,15 @@
 def validation_check(group, country_1, country_2):
-    countries = {"Group A": ["Ecuador", "Netherlands", "Qatar", "Senegal"],
-                 "Group B": ["England", "Iran", "USA", "Wales"],
-                 "Group C": ["Argentina", "Mexico", "Poland", "Saudi Arabia"],
-                 "Group D": ["Australia", "Denmark", "France", "Tunisia"],
-                 "Group E": ["Costa Rica", "Germany", "Japan", "Spain"],
-                 "Group F": ["Belgium", "Canada", "Croatia", "Morocco"],
-                 "Group G": ["Brasil", "Cameroon", "Serbia", "Switzerland"],
-                 "Group H": ["Ghana", "Portugal", "South Korea", "Uruguay"]}
+    groups = {"Group A": ("Ecuador", "Netherlands", "Qatar", "Senegal"),
+              "Group B": ("England", "Iran", "USA", "Wales"),
+              "Group C": ("Argentina", "Mexico", "Poland", "Saudi Arabia"),
+              "Group D": ("Australia", "Denmark", "France", "Tunisia"),
+              "Group E": ("Costa Rica", "Germany", "Japan", "Spain"),
+              "Group F": ("Belgium", "Canada", "Croatia", "Morocco"),
+              "Group G": ("Brasil", "Cameroon", "Serbia", "Switzerland"),
+              "Group H": ("Ghana", "Portugal", "South Korea", "Uruguay")}
 
-    if group in countries:
-        ongoing_group = countries[group]
+    if group in groups:
+        ongoing_group = groups[group]
         if country_1 not in ongoing_group or country_2 not in ongoing_group:
             print("Invalid country given!")
             exit(1)
@@ -18,9 +18,9 @@ def validation_check(group, country_1, country_2):
         exit(-1)
 
 
-def group_stage_file_parser(text):
+def group_stage_file_parser(file_path):
     predictions = {}
-    with open(text, "r") as group_stage:
+    with open(file_path, "r") as group_stage:
         row_number = 0
         key_part_one = "Group "
         key_part_two = chr(ord("A") - 1)
@@ -38,8 +38,8 @@ def group_stage_file_parser(text):
                 if row[-1] != "\n":
                     second_country += row[-1]
                 validation_check(group_name, first_country, second_country)
-                predictions[group_name] = (first_country, second_country)
-                # predictions.update(group_name : (first_country, second_country))
+                # predictions[group_name] = (first_country, second_country)
+                predictions.update({group_name: (first_country, second_country)})
             row_number += 1
 
     return predictions

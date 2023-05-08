@@ -1,31 +1,28 @@
 from Validation import validation_check
 
 
-def quarter_finals_file_parser(text, round_of_16_predictions):
+def quarter_finals_file_parser(file_path, round_of_16_predictions):
     predictions = {}
-    with open(text, "r") as quarter_finals:
+    with open(file_path, "r") as quarter_finals:
         row_number = 0
-        key = ""
+        key_name = ""
         for row in quarter_finals:
-            print(round_of_16_predictions)
-            print(row_number, row)
             if row_number % 4 == 0:
-                key = row[:4] + row[7:-1]
+                key_name = row[:4] + row[7:-1]
             if row_number % 4 == 2:
-                winner = row[len(round_of_16_predictions[key[:4]][0]) +
-                             len(round_of_16_predictions[key[4:]][0]) + 8:-1]   # Ovde pogledaj.
-                print(round_of_16_predictions[key[:4]][0], round_of_16_predictions[key[4:]][0])
+                winner = row[len(round_of_16_predictions[key_name[:4]][0]) +
+                             len(round_of_16_predictions[key_name[4:]][0]) + 8:-1]
                 if row[-1] != "\n":
                     winner += row[-1]
                 validation_check(winner)
 
-                runner_up = ""
-                if round_of_16_predictions[key[:4]][0] == winner:
-                    runner_up = round_of_16_predictions[key[4:]][0]
+                if round_of_16_predictions[key_name[:4]][0] == winner:
+                    runner_up = round_of_16_predictions[key_name[4:]][0]
                 else:
-                    runner_up = round_of_16_predictions[key[:4]][0]
+                    runner_up = round_of_16_predictions[key_name[:4]][0]
                 validation_check(runner_up)
-                predictions[key] = (winner, runner_up)
+                # predictions[key_name] = (winner, runner_up)
+                predictions.update({key_name: (winner, runner_up)})
 
             row_number += 1
 
