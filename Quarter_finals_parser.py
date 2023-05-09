@@ -21,8 +21,7 @@ def quarter_finals_file_parser(file_path, round_of_16_predictions):
                 else:
                     runner_up = round_of_16_predictions[key_name[:4]][0]
                 validation_check(runner_up)
-                # predictions[key_name] = (winner, runner_up)
-                predictions.update({key_name: (winner, runner_up)})
+                predictions[key_name] = (winner, runner_up)
 
             row_number += 1
 

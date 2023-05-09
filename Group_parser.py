@@ -38,8 +38,7 @@ def group_stage_file_parser(file_path):
                 if row[-1] != "\n":
                     second_country += row[-1]
                 validation_check(group_name, first_country, second_country)
-                # predictions[group_name] = (first_country, second_country)
-                predictions.update({group_name: (first_country, second_country)})
+                predictions[group_name] = (first_country, second_country)
             row_number += 1
 
     return predictions

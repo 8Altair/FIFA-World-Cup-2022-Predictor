@@ -22,8 +22,7 @@ def round_of_16_file_parser(file_path, group_predictions):
                 else:
                     runner_up = group_predictions["Group " + key_name[0]][0]
                 validation_check(runner_up)
-                # predictions[key_name] = (winner, runner_up)
-                predictions.update({key_name: (winner, runner_up)})
+                predictions[key_name] = (winner, runner_up)
 
             row_number += 1
 
