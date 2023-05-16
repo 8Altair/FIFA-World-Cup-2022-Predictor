@@ -1,10 +1,8 @@
-from Group_parser import group_stage_file_parser as gsfp
-from Round_of_16_parser import round_of_16_file_parser as ro16fp
-from Quarter_finals_parser import quarter_finals_file_parser as qffp
-from Semi_finals_parser import semi_finals_file_parser as sffp
 from Final_parser import final_file_parser as ffp
-
-from Points_calculator import calculator as cal
+from Group_parser import group_stage_file_parser as gsfp
+from Quarter_finals_parser import quarter_finals_file_parser as qffp
+from Round_of_16_parser import round_of_16_file_parser as ro16fp
+from Semi_finals_parser import semi_finals_file_parser as sffp
 
 if __name__ == '__main__':
     matrix_of_file_names = (("Dino/Dino - predikcija grupe.txt", "Dino/Dino - predikcija osmine finala.txt",
@@ -32,10 +30,10 @@ if __name__ == '__main__':
         group_stage_prediction = gsfp(person[0])
         print(group_stage_prediction)
         round_of_16_prediction = ro16fp(person[1], group_stage_prediction)
-        print(round_of_16_prediction)
+        # print(round_of_16_prediction)
         quarter_finals_prediction = qffp(person[2], round_of_16_prediction)
-        print(quarter_finals_prediction)
+        # print(quarter_finals_prediction)
         semi_finals_prediction = sffp(person[3], quarter_finals_prediction)
-        print(semi_finals_prediction)
+        # print(semi_finals_prediction)
         final_prediction = ffp(person[4], semi_finals_prediction)
-        print(final_prediction)
+        # print(final_prediction)
