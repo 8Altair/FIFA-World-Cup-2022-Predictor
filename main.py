@@ -24,11 +24,13 @@ if __name__ == '__main__':
                              "Tin/Tin - predikcija finala.txt"),
                             )
 
-    points = []
+    all_points = []
     for person in matrix_of_file_names:
+        points = []
         print(f"\n{person[0][0]}'s prediction:\n")
         group_stage_prediction = gsfp(person[0])
-        print(group_stage_prediction)
+        points.append([p[2] for p in group_stage_prediction.values()])
+        # print(group_stage_prediction, points)
         round_of_16_prediction = ro16fp(person[1], group_stage_prediction)
         # print(round_of_16_prediction)
         quarter_finals_prediction = qffp(person[2], round_of_16_prediction)
@@ -37,3 +39,5 @@ if __name__ == '__main__':
         # print(semi_finals_prediction)
         final_prediction = ffp(person[4], semi_finals_prediction)
         # print(final_prediction)
+
+        all_points.append(points)
