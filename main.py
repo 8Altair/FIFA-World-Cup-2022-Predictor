@@ -32,6 +32,7 @@ if __name__ == '__main__':
         points.append([p[2] for p in group_stage_prediction.values()])
         # print(group_stage_prediction, points)
         round_of_16_prediction = ro16fp(person[1], group_stage_prediction)
+        points.append([p[2] for p in round_of_16_prediction.values()])
         # print(round_of_16_prediction)
         quarter_finals_prediction = qffp(person[2], round_of_16_prediction)
         # print(quarter_finals_prediction)
