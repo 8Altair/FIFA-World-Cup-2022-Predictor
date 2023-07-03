@@ -27,10 +27,10 @@ def round_of_16_file_parser(file_path, group_predictions):
                     second_country = group_predictions["Group " + key_name[0]][0]
                 validation_check(second_country)
 
-                if row.split("v")[0].strip() == winner:
-                    loser = row.split("v")[1].strip()
+                if row[0].split("v")[0][:-1] == winner:
+                    loser = row[0].split("v")[1][1:-1]
                 else:
-                    loser = row.split("v")[0].strip()
+                    loser = row[0].split("v")[0][:-1]
                 validation_check(loser)
 
                 points = 0
@@ -39,7 +39,7 @@ def round_of_16_file_parser(file_path, group_predictions):
                 if second_country == loser or first_country == loser:
                     points += 1
 
-                predictions[key_name] = (winner, loser, points)
+                predictions[key_name] = (first_country, second_country, points)
             row_number += 1
 
     return predictions
