@@ -2,7 +2,7 @@ from Validation import validation_check
 
 
 def final_file_parser(file_path, semi_finals_prediction):
-    with open(file_path, "r") as final, open("Rezultati polufinala.txt", "r") as results:
+    with open(file_path, "r") as final, open("Rezultat finala.txt", "r") as results:
         file_1 = final.readline()
         file_2 = results.readline()
         key_name = file_1[:16] + file_1[19:-1]
