@@ -20,7 +20,7 @@ def validation_check(group, country_1, country_2):
 
 def group_stage_file_parser(file_path):
     predictions = {}
-    with open(file_path, "r") as group_stage, open("Rezultati grupe.txt", "r") as results:
+    with open(file_path, "r") as group_stage, open("Results of the group stage.txt", "r") as results:
         row_number = 0
         key_part_one = "Group "
         key_part_two = chr(ord("A") - 1)
