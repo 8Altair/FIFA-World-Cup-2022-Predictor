@@ -3,7 +3,7 @@ from Validation import validation_check
 
 def semi_finals_file_parser(file_path, quarter_finals_predictions):
     predictions = {}
-    with open(file_path, "r") as semi_finals, open("Rezultati polufinala.txt", "r") as results:
+    with open(file_path, "r") as semi_finals, open("Results of the semi finals.txt", "r") as results:
         row_number = 0
         key_name = ""
 

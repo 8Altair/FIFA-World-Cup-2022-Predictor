@@ -6,25 +6,14 @@ from Quarter_finals_parser import quarter_finals_file_parser as qffp
 from Round_of_16_parser import round_of_16_file_parser as ro16fp
 from Semi_finals_parser import semi_finals_file_parser as sffp
 
-
 if __name__ == '__main__':
-    matrix_of_file_names = (("Dino/Dino - predikcija grupe.txt", "Dino/Dino - predikcija osmine finala.txt",
-                             "Dino/Dino - predikcija četvrtine finala.txt", "Dino/Dino - predikcija polufinala.txt",
-                             "Dino/Dino - predikcija finala.txt"),
-                            ("Faris/Faris - predikcija grupe.txt", "Faris/Faris - predikcija osmine finala.txt",
-                             "Faris/Faris - predikcija četvrtine finala.txt", "Faris/Faris - predikcija polufinala.txt",
-                             "Faris/Faris - predikcija finala.txt"),
-                            ("Kristijan/Kristijan - predikcija grupe.txt",
-                             "Kristijan/Kristijan - predikcija osmine finala.txt",
-                             "Kristijan/Kristijan - predikcija četvrtine finala.txt",
-                             "Kristijan/Kristijan - predikcija polufinala.txt",
-                             "Kristijan/Kristijan - predikcija finala.txt"),
-                            ("Miran/Miran - predikcija grupe.txt", "Miran/Miran - predikcija osmine finala.txt",
-                             "Miran/Miran - predikcija četvrtine finala.txt", "Miran/Miran - predikcija polufinala.txt",
-                             "Miran/Miran - predikcija finala.txt"),
-                            ("Tin/Tin - predikcija grupe.txt", "Tin/Tin - predikcija osmine finala.txt",
-                             "Tin/Tin - predikcija četvrtine finala.txt", "Tin/Tin - predikcija polufinala.txt",
-                             "Tin/Tin - predikcija finala.txt"),
+    matrix_of_file_names = (("Player1/Player1 - group prediction.txt", "Player1/Player1 - round of 16 prediction.txt",
+                             "Player1/Player1 - quarter final prediction.txt",
+                             "Player1/Player1 - semi final prediction.txt", "Player1/Player1 - final prediction.txt"),
+                            ("Player2/Player2 - group prediction.txt", "Player2/Player2 - round of 16 prediction.txt",
+                             "Player2/Player2 - quarter final prediction.txt",
+                             "Player2/Player2 - semi final prediction.txt",
+                             "Player2/Player2 - final prediction.txt"),
                             )
 
     all_points = []
@@ -73,4 +62,4 @@ if __name__ == '__main__':
     with open("Table.txt", "w", encoding="utf-8") as f:
         # Write the table string to the file
         f.write(table_string)
-    print(table_string)  # print the table
+    print(table_string)  # Print the table

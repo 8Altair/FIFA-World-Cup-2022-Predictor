@@ -1,7 +1,0 @@
-A1B2C1D2 | E1F2G1H2
-----------------------------------
-Senegal v Brasil --> Brasil
-
-B1A2D1C2 | F1E2H1G2
-----------------------------------
-France v Croatia --> Croatia
