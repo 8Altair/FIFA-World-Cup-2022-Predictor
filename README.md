@@ -43,6 +43,10 @@ Note: The file names should be in the format mentioned above, replacing "PlayerX
 
 4. The table will be saved as `Table.txt` in the repository directory, and the same table will be displayed on the console.
 
+## Output example
+![image](https://github.com/8Altair/FIFA-World-Cup-2022-Predictor/assets/109831705/3b794a45-8abd-457d-9b2a-b958d40a42b3)
+
+
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
